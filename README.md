@@ -1,2 +1,2 @@
-# PublicDocs
+# EQDataCollector
 Docs for public
