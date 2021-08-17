@@ -10,3 +10,12 @@ Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStr
 * 서버 요구 사항
   * CRUD Status
   * CRUD History  
+  * Authentication / Authorization 
+  * logging
+  * Exception Handling
+# DevOPs
+Jenkins, SVN, Ansible, Powershell
+* 요구 사항
+  * CI / CD 
+  * Ansible Setup
+  * PUSH/PULL deploy 
