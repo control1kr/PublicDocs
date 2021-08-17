@@ -34,6 +34,7 @@ MCNex 프로젝트 산출물과 신규 개발 솔루션 suit 이름 입니다.
 
 ### EQDataViewer
 * 설비에서 올라온 Data 를 실시간으로 볼수 있는 Biz logic Application 입니다. 
+* 원하는 log 만 filtering, slicing등을 통해 선별 합니다.
 
 ### Reverse Proxy (Nginx)
 * 설비는 단일 IP 로 데이터를 전송 합니다. 
