@@ -13,7 +13,9 @@ MCNex 프로젝트 산출물과 신규 개발 솔루션 suit 이름 입니다.
     * Reverse Proxy 이중화
     * NoSQLDB replicaSet 구성
     * Break Down시 Biz logic 자동 Restart
-  * 수집기 장애 발생시 Data Buffering
+  * 수집기
+    * Break Down시 Biz logic 자동 Restart
+    * 장애 발생기간 동안 Data Buffering
 
 ## 구성
 * EQDataCollector, EQDataHub, NoSQLDB(MongoDB/ChangeStream),EQDataViewer
