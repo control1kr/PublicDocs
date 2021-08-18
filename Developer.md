@@ -43,5 +43,5 @@ Jenkins, SVN, Ansible, Powershell
     * jenkins 설치
     * ansible 설치
     * powershell 연결
-  * Push (10)
-  * Pull (10)
+  * Push (5)
+  * Pull (5)
