@@ -11,8 +11,7 @@ Visual Studio Code, Vue, Vuetify, Javascript,
 # 서버
 Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStrram)
 * 서버 개발자 요구 스펙
-  * CRUD Status
-  * CRUD History  
+  * CRUD (Status, History)
   * Authentication / Authorization 
   * logging
   * Exception Handling
@@ -29,6 +28,7 @@ Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStr
     * 파일 watch - Chokidar (10)
     * LS 산전 PLC 프로토콜 or ModeBus 프로토콜 (10)
   * 수신하여 history 에 기록하는 CRUD 프로그램을 RestAPI 로 만들어서 제출 하세요 (10)
+    * https://www.mongodb.com/developer/quickstart/nodejs-change-streams-triggers/
   * 서버에서 발생하는 log 를 기록 하세요 (10)
   * Exception 처리를 하세요 (10)
  
