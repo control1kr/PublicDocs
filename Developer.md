@@ -25,7 +25,7 @@ Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStr
 
 * 제출
   * CRUD 를 위한 RestAPI 를 작성 하세요(10)  
-  * 가상 데이터 발생기로 데이터를 송신 하세요 (update Rest Api 호출)
+  * 가상 데이터 발생기로 데이터를 송신 하세요 (update Rest API 호출)
     * 파일 watch - Chokidar (10)
     * LS 산전 PLC 프로토콜 or ModeBus 프로토콜 (10)
   * changestream 데이터를 수신하여 상태를 기록하고 history 에 append 하세요 (20)
