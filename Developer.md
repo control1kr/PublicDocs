@@ -18,7 +18,8 @@ Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStr
 * 테스트
 예제의 mongoDB 에 접속하면 가상의 설비데이터를 수신 할 수 있습니다. 
   * 설비데이터 수신 기능 개발
-    * mongoDB 접속 주소
+    * mongoDB 접속 주소 mongodb+srv://janghoon:<password>@cluster0.ocpuy.mongodb.net/test
+      * DB: EQData_Test , collection : EQStatus(현황) ,H_EQStatus(이력)
     * sample Data 수신
     * CRUD message  
   * 예제의 mongoDB로 가상의 설비 데이터를 송신 기능 개발.
