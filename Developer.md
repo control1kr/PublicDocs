@@ -24,12 +24,17 @@ Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStr
   * 예제의 mongoDB로 가상의 설비 데이터를 송신 기능 개발.
 
 * 제출
+  * CRUD  
   * 가상 데이터 발생기로 데이터를 송신 하세요
     * 파일 watch - Chokidar (10)
     * LS 산전 PLC 프로토콜 or ModeBus 프로토콜 (10)
-  * 수신하여 history 에 기록하는 CRUD 프로그램을 RestAPI 로 만들어서 제출 하세요 (10)
+  * changestream 데이터를 수신하여 상태를 기록하고 history 에 append 하세요 (20)
     * https://www.mongodb.com/developer/quickstart/nodejs-change-streams-triggers/
+    * https://github.com/mongodb-developer/nodejs-quickstart
   * 서버에서 발생하는 log 를 기록 하세요 (10)
+    * [winston logger](https://www.datadoghq.com/blog/node-logging-best-practices/#create-a-custom-logger-for-your-application)
+    * [winston](https://www.youtube.com/watch?v=S0HI5DDCBBs)
+    * [winston+mongodb](https://www.youtube.com/watch?v=PdVlAi7nrRU) [winston+mongodb+git](https://github.com/Tariqu/winston_logger_example)
   * Exception 처리를 하세요 (10)
  
 # DevOPs
