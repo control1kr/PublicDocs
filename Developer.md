@@ -34,7 +34,7 @@ Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStr
   * 서버에서 발생하는 log 를 기록 하세요 (10)
     * [winston logger](https://www.datadoghq.com/blog/node-logging-best-practices/#create-a-custom-logger-for-your-application)
     * [winston](https://www.youtube.com/watch?v=S0HI5DDCBBs)
-    * [winston+mongodb](https://www.youtube.com/watch?v=PdVlAi7nrRU) [winston+mongodb+git](https://github.com/Tariqu/winston_logger_example)
+    * [winston+mongodb](https://www.youtube.com/watch?v=PdVlAi7nrRU) / [winston+mongodb+git](https://github.com/Tariqu/winston_logger_example)
   * Exception 처리를 하세요 (10)
  
 # DevOPs
