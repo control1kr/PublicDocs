@@ -36,6 +36,8 @@ Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStr
     * [winston](https://www.youtube.com/watch?v=S0HI5DDCBBs)
     * [winston+mongodb](https://www.youtube.com/watch?v=PdVlAi7nrRU) / [winston+mongodb+git](https://github.com/Tariqu/winston_logger_example)
   * Exception 처리를 하세요 (10)
+    * https://www.youtube.com/watch?v=GAJhNielqqA
+    * https://www.youtube.com/watch?v=DyqVqaf1KnA
  
 # DevOPs
 Jenkins, SVN, Ansible, Powershell
