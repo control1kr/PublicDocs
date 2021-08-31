@@ -15,14 +15,14 @@ DEVICE         PC             SERVER
 |   |          |   | <------- |   |
 |   |          |   |          |   |
 +---+          +---+          +---+
-
-
 ```
 
 # Sample code 설명
-위의 시나리오를 구현하기 위한 javascript 코드 입니다. \n
-비동기 함수들은 delay 를 호출하여 timeout 후 call back 되도록 하여 SERVER,DEVICE 없이 비동기 상황을 테스트 할 수 있음 
+위의 시나리오를 구현하기 위한 javascript 코드 입니다. </br>
+비동기 함수들은 delay 를 호출하여 timeout 후 call back 되도록 하여 </br>
+SERVER,DEVICE 없이 비동기 상황을 테스트 할 수 있음 
 
+* job() 함수 구현후 제출
 
 ## Sample Code
 
