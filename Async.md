@@ -3,7 +3,7 @@
 * 아래 Scenario 대로 동작하는 job() function 개발후 commit
 * javascript / async, await, Promise 이해 필수 
 
-# Scenario
+## Scenario
  *  각각의 함수는 비동기적으로 작동 한다. 
  *  각함수의 실행 순서는 유지 한다. 
  *  5초 간격으로 무한 반복 한다.
@@ -23,14 +23,14 @@
                        +---+          +---+          +---+
 ```
 
-# Sample code 설명
+## Sample code 설명
 위의 시나리오를 구현하기 위한 javascript 코드 입니다. </br>
 비동기 함수들은 delay 를 호출하여 timeout 후 call back 되도록 하여 </br>
 SERVER,DEVICE 없이 비동기 상황을 테스트 할 수 있음 
 
 * job() 함수 구현후 제출
 
-## Sample Code
+### Sample Code
 
 ``` java script
 const log = console.log;
@@ -120,7 +120,7 @@ recur();
 
 
 ```
-## Sample Code 결과
+### Sample Code 결과
 위의 코드를 실행하면 아래와 같이 비동기 함수들이 순차적으로 수행된다. </br>
 * 결과로그 
 ```
