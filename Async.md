@@ -76,23 +76,26 @@ async function job() {
     // 비동기 대기후
     // 얻어진 {id:1},{id:0}
     // 에서 DEVICE 에게 요청할 seq 만 추출 [1,0]  // P => P.id
+    // (1)
     HOST.getConfigs
     log('SEQUENCE NO. : ',seqs)
 
     // getData(seq) 호출하여
     // seq 에 매핑된 데이터 수신후
     // REST API 전달할 oid 만 추출
+    // (2)
     DEVICE.getData,
     log('PLC Data : ',PLCDatas)
 
     // 가상 biz Logic : 
     // PLC 에서 받은 Data * 10 // p => p*10
+    // (3)
     const results = PLC 에서 받은 데이터 * 10
     
     log('after Biz Logic (*10) : ',results)
 
     // REST API 호출
-
+    // (4)
      HOST.sendData)
 
 }
