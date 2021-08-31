@@ -159,3 +159,16 @@ Rest API call for send Data to Server : 20
 Rest API call for send Data to Server : 30
 
 ```
+
+# Client 개발자 
+* 개발환경 : vue.js, vuetify, Visual Studio Code 
+* 위 서버의 의 Message 가 {x : [ 40, 50, 60, 10, 20, 30 ]} 로 전달될경우
+* 실시간으로 x+1 하는 UI 작성 / compose 기능 사용
+* javascript / vue.js 이해 필수 
+
+
+# momngoDB 개발자 
+* 개발환경 : mongoDBCampas.js
+* 위 서버의 의 Message 가 {x : [ 40, 50, 60, 10, 20, 30 ]} 로 전달될경우
+* Collection X 에 실시간으로 저장, ChangeStream Event 발생
+* mongoDB 이해 필수 
