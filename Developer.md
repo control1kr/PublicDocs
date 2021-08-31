@@ -10,11 +10,13 @@ Visual Studio Code, Vue, Vuetify, Javascript,
 
 # 서버
 Visual Studio Code, nodejs, express, logger, RestAPI, swagger, MongoDB(ChangeStrram)
+
 * 서버 개발자 요구 스펙
   * CRUD (Status, History)
   * Authentication / Authorization 
   * logging
   * Exception Handling
+  * 비동기 통신(예제 참조)
 * 테스트
 예제의 mongoDB 에 접속하면 가상의 설비데이터를 수신 할 수 있습니다. 
   * 설비데이터 수신 기능 개발
