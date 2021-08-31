@@ -88,7 +88,7 @@ async function job() {
     log('PLC Data : ',PLCDatas)
 
     // 가상 biz Logic : 
-    // PLC 에서 받은 Data * 10 // p => p*10
+    // DEVICE 에서 받은 Data * 10 // p => p*10
     // (3)
     const results = PLC 에서 받은 데이터 * 10
     
@@ -96,7 +96,7 @@ async function job() {
 
     // REST API 호출
     // (4)
-     HOST.sendData)
+     HOST.sendData
 
 }
 
@@ -119,13 +119,13 @@ recur();
 
 ```
 ## Sample Code 결과
-위의 코드를 실행하면 아래와 같이 비동기 함수들이 순차적으로 수행된다. \n
-로그 참조
+위의 코드를 실행하면 아래와 같이 비동기 함수들이 순차적으로 수행된다. </br>
+* 결과로그 
 ```
 SEQUENCE NO. :  [ 1, 0 ]
 Send seq no. to Device for get Data : SEQ=1
 Send seq no. to Device for get Data : SEQ=0
-PLC Data :  [ 4, 5, 6, 1, 2, 3 ]
+Device Data :  [ 4, 5, 6, 1, 2, 3 ]
 after Biz Logic (*10) :  [ 40, 50, 60, 10, 20, 30 ]
 Rest API call for send Data to Server : 40
 Rest API call for send Data to Server : 50
@@ -136,7 +136,7 @@ Rest API call for send Data to Server : 30
 SEQUENCE NO. :  [ 1, 0 ]
 Send seq no. to Device for get Data : SEQ=1
 Send seq no. to Device for get Data : SEQ=0
-PLC Data :  [ 4, 5, 6, 1, 2, 3 ]
+Device Data :  [ 4, 5, 6, 1, 2, 3 ]
 after Biz Logic (*10) :  [ 40, 50, 60, 10, 20, 30 ]
 Rest API call for send Data to Server : 40
 Rest API call for send Data to Server : 50
@@ -147,7 +147,7 @@ Rest API call for send Data to Server : 30
 SEQUENCE NO. :  [ 1, 0 ]
 Send seq no. to Device for get Data : SEQ=1
 Send seq no. to Device for get Data : SEQ=0
-PLC Data :  [ 4, 5, 6, 1, 2, 3 ]
+Device Data :  [ 4, 5, 6, 1, 2, 3 ]
 after Biz Logic (*10) :  [ 40, 50, 60, 10, 20, 30 ]
 Rest API call for send Data to Server : 40
 Rest API call for send Data to Server : 50
