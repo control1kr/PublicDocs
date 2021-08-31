@@ -85,7 +85,7 @@ async function job() {
     // REST API 전달할 oid 만 추출
     // (2)
     DEVICE.getData,
-    log('PLC Data : ',PLCDatas)
+    log('Device Data : ',DeviceDatas)
 
     // 가상 biz Logic : 
     // DEVICE 에서 받은 Data * 10 // p => p*10
@@ -157,6 +157,3 @@ Rest API call for send Data to Server : 20
 Rest API call for send Data to Server : 30
 
 ```
-
-
-
