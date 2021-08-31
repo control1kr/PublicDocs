@@ -4,7 +4,7 @@
 * javascript / async, await, Promise 이해 필수 
 
 ## Scenario
- * (A) 에서 동작하는 Collector 의 시나리오 입니다ㅏ.
+ * (A) 에서 동작하는 Collector 의 시나리오 입니다.
  *  각각의 함수는 비동기적으로 작동 한다. 
  *  각함수의 실행 순서는 유지 한다. 
  *  5초 간격으로 무한 반복 한다.
