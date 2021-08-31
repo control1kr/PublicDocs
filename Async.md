@@ -1,10 +1,12 @@
 # 서버 개발자 
+* 개발환경 : node.js, Visual Studio Code 
 * 아래 Scenario 대로 동작하는 job() function 개발후 commit
 * javascript / async, await, Promise 이해 필수 
 
 # Scenario
  *  각각의 함수는 비동기적으로 작동 한다. 
- *  각함수의 실행 순서는   유지 한다. 
+ *  각함수의 실행 순서는 유지 한다. 
+ *  5초 간격으로 무한 반복 한다.
 
 ```
 DEVICE         PC             SERVER
