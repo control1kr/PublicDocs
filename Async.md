@@ -42,6 +42,8 @@ cancel 요청
 비동기 함수들은 대상 서버/Device가 없으므로 delay 를 호출하여 time 후 call back 되도록 하여 비동기 상황을 테스트 할 수 있도록 했습니다. 
 
 
+## 비동기
+
 ``` java script
 const log = console.log;
 
@@ -123,6 +125,49 @@ async function recur() {
 
 recur();
 
+
+
+
 ```
+## 결과
+위의 코드를 실행하면 아래와 같이 비동기 함수들이 순차적으로 수행된다. \n
+로그 참조
+```
+SEQUENCE NO. :  [ 1, 0 ]
+Send seq no. to Device for get Data : SEQ=1
+Send seq no. to Device for get Data : SEQ=0
+PLC Data :  [ 4, 5, 6, 1, 2, 3 ]
+after Biz Logic (*10) :  [ 40, 50, 60, 10, 20, 30 ]
+Rest API call for send Data to Server : 40
+Rest API call for send Data to Server : 50
+Rest API call for send Data to Server : 60
+Rest API call for send Data to Server : 10
+Rest API call for send Data to Server : 20
+Rest API call for send Data to Server : 30
+SEQUENCE NO. :  [ 1, 0 ]
+Send seq no. to Device for get Data : SEQ=1
+Send seq no. to Device for get Data : SEQ=0
+PLC Data :  [ 4, 5, 6, 1, 2, 3 ]
+after Biz Logic (*10) :  [ 40, 50, 60, 10, 20, 30 ]
+Rest API call for send Data to Server : 40
+Rest API call for send Data to Server : 50
+Rest API call for send Data to Server : 60
+Rest API call for send Data to Server : 10
+Rest API call for send Data to Server : 20
+Rest API call for send Data to Server : 30
+SEQUENCE NO. :  [ 1, 0 ]
+Send seq no. to Device for get Data : SEQ=1
+Send seq no. to Device for get Data : SEQ=0
+PLC Data :  [ 4, 5, 6, 1, 2, 3 ]
+after Biz Logic (*10) :  [ 40, 50, 60, 10, 20, 30 ]
+Rest API call for send Data to Server : 40
+Rest API call for send Data to Server : 50
+Rest API call for send Data to Server : 60
+Rest API call for send Data to Server : 10
+Rest API call for send Data to Server : 20
+Rest API call for send Data to Server : 30
+
+```
+
 
 
