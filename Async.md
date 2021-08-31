@@ -1,7 +1,9 @@
-# 비동기 통신 개발
+# Scenario
+ *  각각의 함수는 비동기적으로 작동 한다. 
+ *  각함수의 실행 순서는   유지 한다. 
 
 ```
-DEVICE         PC             HOST
+DEVICE         PC             SERVER
 +---+          +---+          +---+
 |   |          |   |          |   |   
 |   |          |   | -------> |   |   HOST.getConfigs
@@ -17,20 +19,12 @@ DEVICE         PC             HOST
 
 ```
 
-# Scenario
+# Sample code 설명
+위의 시나리오를 구현하기 위한 javascript 코드 입니다. \n
+비동기 함수들은 delay 를 호출하여 timeout 후 call back 되도록 하여 SERVER,DEVICE 없이 비동기 상황을 테스트 할 수 있음 
 
 
-
-
-
-# Test Data
-
-# Sample code 제출
-위의 시나리오를 구현하기 위한 javascript 코드 입니다.
-비동기 함수들은 대상 서버/Device가 없으므로 delay 를 호출하여 time 후 call back 되도록 하여 비동기 상황을 테스트 할 수 있도록 했습니다. 
-
-
-## 비동기
+## Sample Code
 
 ``` java script
 const log = console.log;
@@ -117,7 +111,7 @@ recur();
 
 
 ```
-## 결과
+## Sample Code 결과
 위의 코드를 실행하면 아래와 같이 비동기 함수들이 순차적으로 수행된다. \n
 로그 참조
 ```
