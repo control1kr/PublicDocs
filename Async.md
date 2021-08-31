@@ -37,19 +37,15 @@ cancel 요청
 
 # Test Data
 
-# Test Code
+# Sample code 제출
+위의 시나리오를 구현하기 위한 javascript 코드 입니다.
+비동기 함수들은 대상 서버/Device가 없으므로 delay 를 호출하여 time 후 call back 되도록 하여 비동기 상황을 테스트 할 수 있도록 했습니다. 
+
 
 ``` java script
-// const {log, clear} = console;
-const FxJS = require ("fxjs")
-// const _= require("fxjs/Strict")
-const L = require("fxjs/Lazy")
-const C = require("fxjs/Concurrency")
+const log = console.log;
 
-const {curry,takeWhile,flat,go,filter,take,log,reduce, map, tallAllC} = FxJS;
-
-const rangeL = require("fxjs/Lazy/rangeL");
-
+//비동기 상황을 만들기 위해 time 시간 지난후 a 반환
 const delay = function (time,a) {
     return new Promise((resolve,reject) => {
         // resolve(a);
@@ -59,12 +55,7 @@ const delay = function (time,a) {
         
 }
 
-//(1) PLC 에게 Packet 보내서 받은 응답 (비동기)
-//(2) 2배 해서
-//(3) REST API 로 전송 (비동기)
-// 1초 간격으로 무한 반복 
-
-const DEVICE = {
+const DEVICE = {  
     packetMap: {  // Device Map => [seq no : Device Data]
         //seq : 
         0: [{iid:11,oid:1},{iid:12,oid:2},{iid:13,oid:3}],
@@ -82,7 +73,7 @@ const DEVICE = {
 
 const HOST = {
     getConfigs: p => {
-        return delay(1000*1,[{id:1},{id:0}]) //,{id:3},{id:7}
+        return delay(1000*1,[{id:1},{id:0}])
     },
     sendData: d => {
         console.log(`Rest API call for send Data to Server : ${d}`)
@@ -93,41 +84,36 @@ const HOST = {
 
 
 async function job() {
-    const seqs = await go(L.range(1),
-        HOST.getConfigs,
-        L.map(c => c.id),
-        take(Infinity),
-    )
+    // config 얻기 위해 호출
+    // 비동기 대기후
+    // 얻어진 {id:1},{id:0}
+    // 에서 DEVICE 에게 요청할 seq 만 추출 [1,0]  // P => P.id
+    HOST.getConfigs
     log('SEQUENCE NO. : ',seqs)
 
-    const PLCDatas = await go(
-        seqs,
-        L.map(DEVICE.getData),
-        // takeWhile(seqs => seqs.length),
-        flat,
-        L.map(p => p.oid),
-        take(Infinity),
-    )   
-  
+    // getData(seq) 호출하여
+    // seq 에 매핑된 데이터 수신후
+    // REST API 전달할 oid 만 추출
+    DEVICE.getData,
     log('PLC Data : ',PLCDatas)
-    
-    const results = await go(
-        PLCDatas,
-        L.map(p => p*10),
-        take(Infinity)
-        )
+
+    // 가상 biz Logic : 
+    // PLC 에서 받은 Data * 10 // p => p*10
+    const results = PLC 에서 받은 데이터 * 10
     
     log('after Biz Logic (*10) : ',results)
 
-    return await go (results,
-         L.map(HOST.sendData),
-         take(Infinity),
-    )
-    
+    // REST API 호출
 
-
+     HOST.sendData)
 
 }
+
+// job 을 매 5초 간격으로 실행
+// job 이 5초 이상 걸리면
+// job 이 끝날때까지 대기후 job 수행
+// job 이 5초 이내 완료 되면
+// 5초간 대기후 job 수행
 async function recur() {
     return Promise.all([
         delay(1000*5),
