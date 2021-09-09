@@ -1,4 +1,4 @@
-# 서버 개발자 
+# PLC Driver 개발자 
 * 개발환경 : node.js, Visual Studio Code 
 * 아래 Scenario 대로 동작하는 job() function 개발후 commit
 * javascript / async, await, Promise 이해 필수 
