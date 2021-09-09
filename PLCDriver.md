@@ -161,7 +161,17 @@ Rest API call for send Data to Server : 30
 
 ```
 
+
+
+# 요구조건
+
+* Socket Programming 유경험자 // Connect ,Disconnect , Reconnect, Send, Receive
+* 비동기 통신 유경험자
+
+---
+
 # Client 개발자 
+
 * 개발환경 : vue.js, vuetify, Visual Studio Code 
 * 위 서버의 의 Message 가 {x : [ 40, 50, 60, 10, 20, 30 ]} 로 전달될경우
 * 실시간으로 x+1 하는 UI 작성 / compose 기능 사용
