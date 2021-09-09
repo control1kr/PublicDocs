@@ -1,5 +1,5 @@
 # EQDataConnector
-MCNex 프로젝트 산출물과 신규 개발 솔루션 suit 이름 입니다.  
+프로젝트 산출물과 신규 개발 항목 입니다.  
 
 * 아래 기능을 Enterprise Level 로 수행 합니다. 
   * 기능 (1) 설비에서 발생하는 다양한 데이터 의 수집 , 저장, 공유, 처리 로직 수행
@@ -42,5 +42,4 @@ MCNex 프로젝트 산출물과 신규 개발 솔루션 suit 이름 입니다.
 
 ### EQDataVirtualEQ
 * 설비에서 생성 되는 FILE 을 Emulate 하여 가상의 Data 를 만듭니다.  
-
 
